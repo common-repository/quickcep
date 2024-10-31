@@ -1,0 +1,72 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .wck {
+        width: 100vw;
+        height: 90vh;
+        display: grid;
+        place-content: center;
+        place-items: center;
+        grid-template-columns: 670px;
+        row-gap: 20px;
+    }
+
+    .wck__logo {
+        height: 218px;
+        width: 295px;
+    }
+
+    .wck__title {
+        padding: 0 50px;
+        font-weight: 500;
+        word-break: normal;
+        size: 24px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.85)
+    }
+
+    .wck__content {
+        text-align: center;
+        size: 16px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 0.65);
+    }
+
+    .wck__link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 139px;
+        height: 36px;
+        background: #FF6600;
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+</style>
+<div class="wck">
+    <img src="<?= QUICKCEP_URL; ?>includes/admin/assets/LOGO.png">
+    <h2 class="wck__title">
+        Connect your QuickCEP account to use the QuickCEP + WooCommerce
+        integration.
+    </h2>
+    <p class="wck__content">
+        Through customer data platform, shopping guide robot and marketing
+        automation, QuickCEP can reach each shopping node of independent users
+        to improve the conversion rate of consumers.
+    </p>
+    <a
+            class="wck__link"
+            href="https://app.quickcep.com/panel/fromStore/woocommerce?url=<?= get_home_url(); ?>"
+    >Let`s Go !</a
+    >
+</div>
